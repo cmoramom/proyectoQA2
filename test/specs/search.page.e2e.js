@@ -43,11 +43,10 @@ describe('Terapeutica Search Page', () => {
     });
 
 
-    it('Hide Maps when therepist grill', () => {
+    it('Hidden Maps when therepist grill is active', () => {
         
-        SearchPage.doClickBtn(SearchPage.btnMaps);
-        browser.debug();
-
+        SearchPage.doClickBtn(SearchPage.btnMaps);          
+        expect(SearchPage.divMaps).not.toBeDisplayed();
               
 
 

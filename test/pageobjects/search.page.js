@@ -9,6 +9,7 @@ class SearchPage extends Page {
 	get inputSearch () { return $('.form-control') }
 	get btnSubmit () { return $('[value=Buscar]') }
 	get btnMaps () { return $('.icon-map-1') }
+	get divMaps () {  return $('div[id="map_listing"]')}
 
 	
 
